@@ -68,7 +68,7 @@ public class Test : MonoBehaviour {
 			videoPlayer.renderMode = VideoRenderMode.MaterialOverride;
 			break;
 		case "APIOnly":
-            // renderMode が APIOnly の時にはフレームが準備されるのを待つ
+			// renderMode が APIOnly の時にはフレームが準備されるのを待つ
 			SetSendFrameReadyEvents (true);
 			videoPlayer.renderMode = VideoRenderMode.APIOnly;
 			break;

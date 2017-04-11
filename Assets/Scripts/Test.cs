@@ -57,11 +57,13 @@ public class Test : MonoBehaviour {
 			break;
 		case "RenderTexture":
 			SetSendFrameReadyEvents (false);
+			// RenderTexture の場合には targetTexture を設定しておく必要有り
 			videoPlayer.targetTexture = renderTexture;
 			videoPlayer.renderMode = VideoRenderMode.RenderTexture;
 			break;
 		case "MaterialOverride":
 			SetSendFrameReadyEvents (false);
+			// MaterialOverride の場合には targetMaterialRenderer を設定しておく必要有り
 			videoPlayer.targetMaterialRenderer = rendrer;
 			videoPlayer.renderMode = VideoRenderMode.MaterialOverride;
 			break;
